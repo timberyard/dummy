@@ -17,7 +17,7 @@ TEST(SampleTest1, TestB) {
 */
 
 TEST(SampleTest2, TestA) {
-  EXPECT_EQ(1, 10-9);
+  EXPECT_EQ(1, 10-9+1);
   EXPECT_EQ(2, 10-8);
   EXPECT_EQ(6, 10-4);
   EXPECT_EQ(40320, 10+40310);
