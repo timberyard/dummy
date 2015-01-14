@@ -1,6 +1,9 @@
 {	"name": "dummy",
 	"variant": "c++",
 	"defaults": {
+		"build:cmake": {
+			"source": "${input}/src"
+		},
 		"test:googletest": {
 			"binary": "${output}/build/googletest"
 		}
