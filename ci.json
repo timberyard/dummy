@@ -2,7 +2,7 @@
 	"variant": "c++",
 	"defaults": {
 		"test:googletest": {
-			"binary": "${output.path}/build/googletest"
+			"binary": "${output}/build/googletest"
 		}
 	}
 }
