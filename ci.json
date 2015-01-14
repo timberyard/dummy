@@ -1,0 +1,8 @@
+{	"name": "dummy",
+	"variant": "c++",
+	"defaults": {
+		"test:googletest": {
+			"binary": "${output.path}/build/googletest"
+		}
+	}
+}
