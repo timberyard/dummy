@@ -1,10 +1,13 @@
 {	"name": "dummy",
 	"variant": "c++",
-	"defaults": {
-		"build:cmake": {
-			"source": "${input}/src"
+	"tasks": {
+		"build": {
+			"source": "${input}/src",
+			"install": {
+				"enabled": "no"
+			}
 		},
-		"test:googletest": {
+		"test": {
 			"binary": "${output}/build/googletest"
 		}
 	}
