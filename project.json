@@ -23,7 +23,7 @@
 				}
 			},
 			"test": {
-				"binary": "${meta.output}/build/googletest"
+				"binary": "${meta.output}/build_work/googletest"
 			}
 		}
 	}
