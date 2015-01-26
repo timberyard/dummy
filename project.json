@@ -10,6 +10,13 @@
 	"tasks": {
 		"integrate": {
 			"build": {
+				"cmake": {
+					"variables": {
+						"SIGNING_IDENTITY": { "type": "STRING", "value": "0x5467433454" },
+						"SIGNING_KEYCHAIN": { "type": "STRING", "value": "${meta.input}/.keychain" },
+						"SIGNING_KEYCHAIN_PASSWORD": { "type": "STRING", "value": "secret" }
+					}
+				},
 				"source": "${meta.input}/src",
 				"install": {
 					"enabled": "no"
