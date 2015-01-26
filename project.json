@@ -1,0 +1,23 @@
+{	"meta": {
+		"project": {
+			"name": "dummy",
+			"version": "0.2"
+		},
+		"variants": {
+			"integrate": "c++"
+		}
+	},
+	"tasks": {
+		"integrate": {
+			"build": {
+				"source": "${meta.input}/src",
+				"install": {
+					"enabled": "no"
+				}
+			},
+			"test": {
+				"binary": "${meta.output}/build/googletest"
+			}
+		}
+	}
+}
