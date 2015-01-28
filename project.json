@@ -17,13 +17,20 @@
 						"SIGNING_KEYCHAIN_PASSWORD": { "type": "STRING", "value": "secret" }
 					}
 				},
-				"source": "${meta.input}/src",
+				"source": {
+					"input": "${meta.input}/src"
+				},
 				"install": {
 					"enabled": "no"
 				}
 			},
 			"test": {
 				"binary": "${meta.output}/build_work/googletest"
+			}
+		},
+		"publish": {
+			"email": {
+				"type": "publish:email"
 			}
 		}
 	}
