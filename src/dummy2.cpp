@@ -1,2 +1,5 @@
+#include "dummy.hpp"
 
-x
+void test()
+{
+}
