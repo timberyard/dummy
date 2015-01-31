@@ -21,7 +21,7 @@
 					"input": "${meta.input}/src"
 				},
 				"install": {
-					"enabled": "no"
+					"enabled": false
 				}
 			},
 			"test": {
