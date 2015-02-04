@@ -27,11 +27,6 @@
 			"test": {
 				"binary": "${meta.output}/build_work/googletest"
 			}
-		},
-		"publish": {
-			"email": {
-				"type": "publish:email"
-			}
 		}
 	}
 }
