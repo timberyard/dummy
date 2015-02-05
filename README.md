@@ -1,7 +1,7 @@
 dummy
 =====
 
-dummy repo for testing oak and oklahoma
+dummy repo for testing timberyard
 
 ```
 ../oak/build/oak
