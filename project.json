@@ -3,30 +3,26 @@
 			"name": "dummy",
 			"version": "0.2"
 		},
-		"variants": {
-			"integrate": "c++"
-		}
+		"variant": "c++"
 	},
 	"tasks": {
-		"integrate": {
-			"build": {
-				"cmake": {
-					"variables": {
-						"SIGNING_IDENTITY": { "type": "STRING", "value": "0x5467433454" },
-						"SIGNING_KEYCHAIN": { "type": "STRING", "value": "${meta.input}/.keychain" },
-						"SIGNING_KEYCHAIN_PASSWORD": { "type": "STRING", "value": "secret" }
-					}
-				},
-				"source": {
-					"input": "${meta.input}/src"
-				},
-				"install": {
-					"enabled": false
+		"build": {
+			"cmake": {
+				"variables": {
+					"SIGNING_IDENTITY": { "type": "STRING", "value": "0x5467433454" },
+					"SIGNING_KEYCHAIN": { "type": "STRING", "value": "${meta.input}/.keychain" },
+					"SIGNING_KEYCHAIN_PASSWORD": { "type": "STRING", "value": "secret" }
 				}
 			},
-			"test": {
-				"binary": "${meta.output}/build_work/googletest"
+			"source": {
+				"input": "${meta.input}/src"
+			},
+			"install": {
+				"enabled": false
 			}
+		},
+		"test": {
+			"binary": "${meta.output}/build_work/googletest"
 		}
 	}
 }
